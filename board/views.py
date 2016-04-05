@@ -1,6 +1,8 @@
+from django.contrib.auth import get_user_model
+
 from rest_framework import authentication, permissions, viewsets
 
-from .models import Sprint
+from .models import Sprint, Task
 from .serializers import SprintSerializer, TaskSerializer, UserSerializer
 
 
